@@ -1,10 +1,10 @@
 #include <stdio.h>
 /**
- * main - A program that prints a line to standard error using fputs
+ * main - entry point
  * Return: 1 (Success)
  */
 int main(void)
 {
-	fputs("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
+	write("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
 	return (1);
 }
