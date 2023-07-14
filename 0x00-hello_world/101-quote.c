@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - entry point
+ * main - A program that prints a line to standard error using fput
  * Return: 1 (Success)
  */
 int main(void)
