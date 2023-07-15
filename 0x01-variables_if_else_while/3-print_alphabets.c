@@ -6,16 +6,16 @@
 int main(void)
 {
 
-	char ch = 'a';
-	char ch = 'A';
+	char lowerch = 'a';
+	char upperch = 'A';
 
-	for (ch = 'a'; ch <= 'z'; ch++)
+	for (lowerch = 'a'; lowerch <= 'z'; lowerch++)
 	{
-	putchar(ch);
+	putchar(lowerch);
 	}
-	for (ch = 'A'; ch <= 'Z'; ch++)
+	for (upperch = 'A'; upperch <= 'Z'; upperch++)
 	{
-	putchar(ch);
+	putchar(upperch);
 	}
 	putchar('\n');
 	return (0);
