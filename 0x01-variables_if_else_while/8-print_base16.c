@@ -5,16 +5,16 @@
  */
 int main(void)
 {
-	int cha = 0;
-	int hexdigit = 'a';
+	int i = '0';
+	int a_f = 'a';
 	
-	while (cha = 0; cha <= 9; cha++)
+	while (i <= 9; i++)
 	{
-	putchar(cha);
+	putchar(i);
 	}
-	while (hexdigit = 'a'; hexdigit <= 'f'; hexdigit++)
+	while (a_f <= 'f'; a_f++)
 	{
-	putchar(hexdigit);
+	putchar(a_f);
 	}
 	putchar('\n');
 	return (0);
