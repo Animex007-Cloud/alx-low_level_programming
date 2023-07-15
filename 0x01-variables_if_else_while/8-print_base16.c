@@ -12,7 +12,7 @@ int main(void)
 	{
 	putchar(cha);
 	}
-	while (hexdigit <= 'f'; hexdigit++)
+	while (hexdigit = 'a'; hexdigit <= 'f'; hexdigit++)
 	{
 	putchar(hexdigit);
 	}
