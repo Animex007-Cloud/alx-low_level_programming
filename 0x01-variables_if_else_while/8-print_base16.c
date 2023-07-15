@@ -5,19 +5,20 @@
  */
 int main(void)
 {
-	int cha;
+	int cha = 0;
+	int hexdigit = 'a';
 
-	for (cha = 0; cha <= 16; cha++)
-	char hexdigit;
-
+	while (cha = 0; cha <= 16; cha++)
 	if (cha < 10)
-	hexdigit = 0 + cha;
-
-	else
-       	hexdigit = 'a' + (cha - 10);
 	{
-	putchar(hexdigit);
+	hexdigit = 0 + cha;
 	}
+	else
+	{
+       	hexdigit = 'a' + (cha - 10);
+	}
+	putchar(hexdigit);
+
 	putchar('\n');
 	return (0);
 }
