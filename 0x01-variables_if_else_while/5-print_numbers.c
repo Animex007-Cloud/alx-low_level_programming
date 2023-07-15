@@ -5,12 +5,12 @@
  */
 int main(void)
 {
-	char base = '0'
+	char base = '0';
 
 	for (base = '0'; base <= '9'; base++)
 	{
 	putchar(base);
 	}
-	putchar('\n')
+	putchar('\n');
 	return (0);
 }
