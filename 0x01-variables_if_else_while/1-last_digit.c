@@ -7,6 +7,7 @@
  */
 int main(void)
 {
+	int n;
 	int Lastd = n % 10;
 
 	srand(time(0));
