@@ -6,14 +6,15 @@
 int main(void)
 {
 	int cha;
-	char hexdigit;
 
 	for (cha = 0; cha <= 16; cha++)
+	char hexdigit;
+
 	if (cha < 10)
-	{
 	hexdigit = 0 + cha;
-	}
-	else hexdigit = 'a' + (cha - 10)
+
+	else
+       	hexdigit = 'a' + (cha - 10);
 	{
 	putchar(hexdigit);
 	}
