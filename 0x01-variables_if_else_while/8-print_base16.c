@@ -16,5 +16,7 @@ int main(void)
 	{
 		putchar(a_f);
 	}
+	
 	putchar('\n');
+	
 	return (0);
