@@ -7,8 +7,9 @@ int main(void)
 {
 	int cha = 0;
 	int hexdigit = 'a';
+	
+	for (cha = 0; cha <= 16; cha++)
 
-	while (cha = 0; cha <= 16; cha++)
 	if (cha < 10)
 	{
 	hexdigit = 0 + cha;
