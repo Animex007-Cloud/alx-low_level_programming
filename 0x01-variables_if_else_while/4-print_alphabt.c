@@ -7,11 +7,11 @@ int main(void)
 {
 	char ch = 'a';
 
-	for (ch - 'a'; ch <= 'z'; ch++)
+	for (ch = 'a'; ch <= 'z'; ch++)
 	if (ch != 'q' && 'e')
 	{
 	putchar(ch);
 	}
-	putcha('\n');
+	putchar('\n');
 	return (0);
 }
