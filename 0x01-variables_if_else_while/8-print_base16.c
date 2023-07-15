@@ -8,11 +8,11 @@ int main(void)
 	int i = '0';
 	int a_f = 'a';
 	
-	while (i <= 9; i++)
+	while (i <= 9;)  i++;
 	{
 	putchar(i);
 	}
-	while (a_f <= 'f'; a_f++)
+	while (a_f <= 'f';) a_f++;
 	{
 	putchar(a_f);
 	}
