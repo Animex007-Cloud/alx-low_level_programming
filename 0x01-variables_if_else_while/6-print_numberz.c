@@ -7,7 +7,7 @@ int main(void)
 {
 	int a;
 
-	if (a = 0; 0 <= 9; a++)
+	if (a = 0; a <= 9; a++)
 	{
 	putchar(a);
 	}
