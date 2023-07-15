@@ -5,11 +5,11 @@
  */
 int main(void)
 {
-	int 0
+	int _0
 
-	if (0 <= 9; 0++)
+	if (_0 <= 9; _0++)
 	{
-	putchar(0);
+	putchar(_0);
 	}
 	putchar('\n');
 	return (0);
