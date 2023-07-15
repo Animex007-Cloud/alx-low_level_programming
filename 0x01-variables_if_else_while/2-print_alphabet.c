@@ -3,12 +3,17 @@
  * main - Always entry
  * Return: 0 (Successful)
  */
-int main()
+int main(void)
 {
 
-	char ch = 'a';
+	char start = 'a';
+	char end = 'z';
 
-	for (ch = 'a'; ch <= 'z'; ch++)
+	for (char ch = start; ch <= end; ch++)
+	{
 	putchar(ch);
+	}
+	putchar('\n');
+
 	return (0);
 }
