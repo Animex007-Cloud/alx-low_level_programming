@@ -5,11 +5,11 @@
  */
 int main(void)
 {
-	int a;
+	char 'i';
 
-	if (a = 0; a <= 9; a++)
+	if ('i' = '0'; 'i' <= '9'; 'i'++)
 	{
-	putchar(a);
+	putchar('i');
 	}
 	putchar('\n');
 	return (0);
