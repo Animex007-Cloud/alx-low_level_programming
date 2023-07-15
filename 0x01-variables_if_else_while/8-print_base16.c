@@ -8,15 +8,13 @@ int main(void)
 	int cha = 0;
 	int hexdigit = 'a';
 	
-	for (cha = 0; cha <= 16; cha++)
-
-	if (cha < 10)
+	for (cha = 0; cha <= 9; cha++)
 	{
-	hexdigit = 0 + cha;
+	putchar(cha);
 	}
 	else
 	{
-       	hexdigit = 'a' + (cha - 10);
+       	(hexdigit <= 'f');
 	}
 	putchar(hexdigit);
 
