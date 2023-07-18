@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
- * main - Print all possible different combination of two digits
+ * main -Always entry
+ * Description: Print all possible different combination of two digits.
  * Reaturn: 0 (Success)
  */
 int main(void)
@@ -10,9 +11,10 @@ int main(void)
 
 	for (num1 = 0; num1 <= 9; num1++)
 	for (num2 = 1; num2 <= 9; num2++)
+		if (num1 != num2)
 	{
-		putchar(num1 + 48);
-		putchar(num2 + 49);
+		putchar(num1 + '0');
+		putchar(num2 + '1');
 	}
 	putchar(',');
 	putchar(' ');
