@@ -19,10 +19,10 @@ int main(void)
 		putchar(num3 + '0');
 	}
 	if (num1 != 7 || num2 != 8 || num3 != 9)
-
+	{
 		putchar(',');
 		putchar(' ');
-
+	}
 	putchar('\n');
 	return (0);
 }
