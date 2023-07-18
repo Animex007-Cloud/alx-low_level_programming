@@ -20,10 +20,8 @@ int main(void)
 	}
 	if (num1 != 7 || num2 != 8 || num3 != 9)
 
-	{
-		putchar('.');
+		putchar(',');
 		putchar(' ');
-	}
 
 	putchar('\n');
 	return (0);
