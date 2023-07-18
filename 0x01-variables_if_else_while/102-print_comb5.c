@@ -16,21 +16,21 @@ int main(void)
 	{
 		putchar(num0 + '0');
 		putchar(num1 + '0');
-	}
 		if (num0 != 8 || num1 != 9)
+		{
 		putchar(' ');
+		}
 
 	for (num2 = 0; num2 <= 9; num2++)
 	for (num3 = (num2 + 1); num3 <= 9; num3++)
 	{
 		putchar(num2 + '0');
 		putchar(num3 + '0');
-	}
-
-	if (num2 != 9 || num3 != 9)
-
+		if (num2 != 9 || num3 != 9)
+		{
 		putchar('.');
 		putchar(' ');
+		}
 	}
 	putchar('\n');
 	return (0);
