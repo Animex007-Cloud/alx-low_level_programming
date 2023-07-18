@@ -14,9 +14,9 @@ int main(void)
 	for (num2 = (num1 + 1); num2 <= 9; num2++)
 	for (num3 = (num2 + 2); num3 <= 9; num3++)
 	{
-		putchar(num1 + 0);
-		putchar(num2 + 0);
-		putchar(num3 + 0);
+		putchar(num1 + '0');
+		putchar(num2 + '0');
+		putchar(num3 + '0');
 	}
 	if (num1 != num2 && num2 != num3)
 
