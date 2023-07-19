@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * main - Check the code
- * Description: print _putchar followde by new line.
+ * Description: print _putchar followed by new line.
  * Return: 0 (Success)
  */
 int main(void)
@@ -15,5 +15,6 @@ int main(void)
 	_putchar("a");
 	_putchar("r");
 	_putchar('\n');
+
 	return (0);
 }
