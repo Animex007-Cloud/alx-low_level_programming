@@ -6,20 +6,32 @@
  *
  * Return: 0
  */
+
 void times_table(void)
 {
-	int multi;
+	int x;
+	int y;
 	int result;
 
-	for (multi = 0; multi <= 9; multi++)
+	for (x = 0; x <= 9; x++)
 	{
-		result = 9 * multi;
-		_putchar('0' + multi);
-		_putchar('x');
-		_putchar('0' + 9);
-		_putchar('=');
-		_putchar('0' + result / 10);
-		_putchar('0' + result % 10);
+		_putchar(48);
+		for (y = 1; y <= 9; y++)
+		{
+			result = x * y;
+			_putchar(44);
+			_putchar(32);
+			if (result < 10)
+			{
+				_putchar(32);
+				_putchar(result + 48);
+			}
+			else
+			{
+				_putchar((result / 10) + 48);
+				_putchar((result % 10) + 48);
+			}
+		}
 		_putchar('\n');
 	}
 }
