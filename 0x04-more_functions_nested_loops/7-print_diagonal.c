@@ -3,7 +3,7 @@
 /**
  * print_diagonal - Entry point
  * Description: draw a diognal line
- *
+ *@n: int
  * Return: 0
  */
 
