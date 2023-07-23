@@ -18,9 +18,12 @@ int main(void)
 			putchar(' ');
 			putchar((num1 / 10) + '0');
 			putchar((num1 % 10) + '0');
+
 			if (!(num0 == 98 && num1 == 99))
-			putchar(',');
-			putchar(' ');
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
 	}
 	putchar('\n');
