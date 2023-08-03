@@ -4,7 +4,7 @@
  * factorial - entry point
  * Description: return the value of a given number
  * @n: declared int
- * Return 0
+ * Return: 0
  */
 
 int factorial(int n)
@@ -19,6 +19,6 @@ int factorial(int n)
 	}
 	else
 	{
-		return n * factorial(n - 1);
+		return (n * factorial(n - 1));
 	}
 }
