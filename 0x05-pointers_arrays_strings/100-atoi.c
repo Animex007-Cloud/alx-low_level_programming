@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _atio - Entry point
+ * _atoi - Entry point
  * @s: strings to be printed
  * Description: function that converts a string to an integar
  * Return: 0
