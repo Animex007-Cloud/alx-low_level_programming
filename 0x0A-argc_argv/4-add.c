@@ -9,22 +9,22 @@
  * Return: 1 if number and 0 if otherwise/
  */
 
-int num(char *s)
+int num(char *x)
 {
-	int a, b, len;
+	int a, b, length;
 	
 	a = 0;
 	b = 0;
-	len = strlen(s);
+	length = strlen(x);
 
-	while (a < len)
+	while (a < length)
 	{
-		if (s[a] < '0' || s[a] > '9')
+		if (x[a] < '0' || x[a] > '9')
 		{
 			return (-1);
 		}
 		else
-			b = b * 10 + (s[a] - '0');
+			b = b * 10 + (x[a] - '0');
 		a++;
 	}
 	return (b);
