@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -17,6 +16,7 @@ int num(char *s)
 	a = 0;
 	b = 0;
 	len = strlen(s);
+
 	while (a < len)
 	{
 		if (s[a] < '0' || s[a] > '9')
@@ -40,7 +40,7 @@ int num(char *s)
 
 int main(int argc, char *argv[])
 {
-	int sum = 0;
+	int add = 0;
 	int a, b;
 
 	for (a = 1; a < argc; a++)
@@ -51,8 +51,8 @@ int main(int argc, char *argv[])
 			printf("Error\n");
 			return (1);
 		}
-		sum += b;
+		add += b;
 	}
-	printf("%d\n", sum);
+	printf("%d\n", add);
 	return (0);
 }
