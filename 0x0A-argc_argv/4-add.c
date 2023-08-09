@@ -4,7 +4,7 @@
 
 /**
  * num - entry point
- * @s: character to test
+ * @x: character to test
  * Description: itration checker
  * Return: 1 if number and 0 if otherwise/
  */
@@ -12,7 +12,7 @@
 int num(char *x)
 {
 	int a, b, length;
-	
+
 	a = 0;
 	b = 0;
 	length = strlen(x);
