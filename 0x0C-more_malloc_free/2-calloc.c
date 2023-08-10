@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
 
 /**
@@ -10,7 +9,7 @@
  * Return: 0 or null depending on outcome
  */
 
-void *_calloc(unsigned int nmemb, unsigned int size);
+void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	unsigned int z;
 	char *y;
@@ -22,5 +21,5 @@ void *_calloc(unsigned int nmemb, unsigned int size);
 		return (NULL);
 	for (z = 0; z < nmemb * size; z++)
 		*(y + z) = 0;
-	return ((void *)c);
+	return ((void *)y);
 }
