@@ -5,13 +5,12 @@
 /**
  * print_name - entry point
  * Description: function that prints a name
- * @name: char pointer to string
+ * @name: char pointer
  * @f: function pointer pointing to a function
- * @char: return char
  * Return: void
  */
 
-void print_name(char *name, void(*f)(char *))
+void print_name(char *name, void (*f)(char *))
 {
 	if (name == NULL)
 		return;
