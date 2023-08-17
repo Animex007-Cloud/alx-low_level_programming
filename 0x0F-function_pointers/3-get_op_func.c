@@ -9,9 +9,9 @@
  * @s: argument parameter
  * Return: NULL
  */
-int (*get_op_func(char *s))(int, int)
+int (*get_op_func(char *s))(int a, int b)
 {
-	op_t op_s[] = {
+	op_t ops[] = {
 		{"+", op_add},
 		{"-", op_sub},
 		{"*", op_mul},
@@ -21,10 +21,10 @@ int (*get_op_func(char *s))(int, int)
 	};
 	int i = 0;
 
-	while (op_s[i].op)
+	while (ops[i].op != NULL)
 	{
-		if (*(op_s[i].op) == *s)
-			return (op_s[i].f);
+		if (*s == *ops[i].op)
+			return (ops[i].f);
 		i++;
 	}
 	return (NULL);
