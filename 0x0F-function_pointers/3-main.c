@@ -9,10 +9,10 @@
  * @argv: pointer to argument
  * Return: 0
  */
-int main(int argc, shar *argv[])
+int main(int argc, char *argv[])
 {
 	int num1, num2, calc;
-	int (*res)(int , int);
+	int (*res)(int, int);
 	char *get_op;
 
 	if (argc != 4)
@@ -30,7 +30,7 @@ int main(int argc, shar *argv[])
 		printf("Error\n");
 		exit(100);
 	}
-	res = get_op_function(get_op);
+	res = get_op_func(get_op);
 	calc = res(num1, num2);
 
 	printf("%d\n", calc);
