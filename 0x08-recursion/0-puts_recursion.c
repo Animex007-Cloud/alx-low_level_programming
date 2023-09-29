@@ -18,6 +18,6 @@ void _puts_recursion(char *s)
 	{
 		_putchar(*s);
 		s += 1;
-		_put_resursion(s);
+		_puts_recursion(s);
 	}
 }
