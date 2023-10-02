@@ -43,7 +43,7 @@ int main(int argc, char *argv[])
 	int y, z, add;
 
 	add = 0;
-	for (y = 1; y < argc; a++)
+	for (y = 1; y < argc; y++)
 	{
 		z = num(argv[y]);
 		if (z == -1)
