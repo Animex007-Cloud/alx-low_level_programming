@@ -48,7 +48,7 @@ int main(int argc, char *argv[])
 		z = num(argv[y]);
 		if (z == -1)
 		{
-			-printf("Error\n");
+			printf("Error\n");
 			return (1);
 		}
 		add += z;
