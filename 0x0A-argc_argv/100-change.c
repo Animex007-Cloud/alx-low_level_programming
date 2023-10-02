@@ -32,10 +32,10 @@ int main(int argc, char *argv[])
 
 	for (j = 0; j < 5 && numbz >= 0; j++)
 	{
-		while (numbz >= fin[i])
+		while (numbz >= fin[j])
 		{
 			totalz++;
-			numbz -=[j];
+			numbz -= fin[j];
 		}
 	}
 	printf("%d\n", totalz);
