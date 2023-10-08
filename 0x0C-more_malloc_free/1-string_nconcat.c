@@ -9,6 +9,7 @@
  * Description: Concatenate two strings together.
  * @s1: first string
  * @s2: second string
+ * @n: value
  *
  * Return: points to a new allocated space in memmory, which contains s1
  */
