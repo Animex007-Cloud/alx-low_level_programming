@@ -31,7 +31,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 			return (NULL);
 		return (ptr);
 	}
-	p = malloc(new_size * sizeof(char *));
+	p = malloc(new_size * sizeof(char));
 	if (p == NULL)
 		return (NULL);
 	z = 0;
