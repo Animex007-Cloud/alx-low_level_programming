@@ -12,10 +12,10 @@
  * Return: pointer to new allocated memory or null.
  */
 
-void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 	unsigned int z;
-	unsigned char *p;
+	unsigned char *x;
 
 	if (new_size == old_size)
 		return (ptr);
@@ -31,26 +31,26 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 			return (NULL);
 		return (ptr);
 	}
-	p = malloc(new_size * sizeof(char *));
-	if (p == NULL)
+	x = malloc(new_size * sizeof(char *));
+	if (x == NULL)
 		return (NULL);
 	z = 0;
 	if (new_size > old_size)
 	{
 		while (z < old_size)
 		{
-			p[z] = ((char *)ptr)[z];
+			x[z] = ((char *)ptr)[z];
 			z++;
 		}
 		free(ptr);
-		return (p);
+		return (x);
 	}
 
 	while (z < new_size)
 	{
-		p[z] = ((char *)ptr)[z];
+		x[z] = ((char *)ptr)[z];
 		z++;
 	}
 	free(ptr);
-	return (p);
+	return (x);
 }
