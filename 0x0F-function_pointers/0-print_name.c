@@ -3,12 +3,13 @@
 
 /**
  * print_name - Entry point
- * @name: pointer to char
- * @f: pointer to function, returns nothing.
- *
  * Description: prints a name
- * Return: nothing
+ *
+ * @f: pointer to function returning nothing.
+ * @name: pointer to character
+ * Return: 0
  */
+
 void print_name(char *name, void (*f) (char *))
 {
 	if (name != NULL && *name != '\0' && f != NULL)
