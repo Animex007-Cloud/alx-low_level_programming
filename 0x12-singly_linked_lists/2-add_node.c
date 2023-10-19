@@ -14,8 +14,8 @@ int _strlen(const char *str)
 	int len;
 
 	for (len = 0; str[len]; len++)
-
-		return (len);
+		;
+	return (len);
 }
 
 /**
