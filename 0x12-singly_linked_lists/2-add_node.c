@@ -30,7 +30,7 @@ list_t *add_node(list_t **head, const char *str)
 {
 	int b, len;
 	char *filled;
-	list_t nodes_new;
+	list_t *nodes_new;
 
 	if (str == NULL || head == NULL)
 		return (NULL);
@@ -44,7 +44,7 @@ list_t *add_node(list_t **head, const char *str)
 	for (b = 0; str[b]; b++)
 		filled[b] = str[b];
 	nodes_new = malloc(sizeof(list_t));
-	if (nodes_newm == NULL)
+	if (nodes_new == NULL)
 	{
 		free(flilled);
 		return (NULL);
@@ -54,4 +54,4 @@ list_t *add_node(list_t **head, const char *str)
 	nodes_new->next = *head;
 	*head = nodes_new;
 	return (nodes_new);
-
+}
