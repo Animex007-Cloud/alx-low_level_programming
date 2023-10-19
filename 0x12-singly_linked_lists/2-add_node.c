@@ -36,7 +36,7 @@ list_t *add_node(list_t **head, const char *str)
 		return (NULL);
 	len = _strlen(str);
 	nodes_new = *head;
-	filled malloc((len + 1) * sizeof(char));
+	filled = malloc((len + 1) * sizeof(char));
 
 	if (filled == NULL)
 		return (NULL);
@@ -46,7 +46,7 @@ list_t *add_node(list_t **head, const char *str)
 	nodes_new = malloc(sizeof(list_t));
 	if (nodes_new == NULL)
 	{
-		free(flilled);
+		free(filled);
 		return (NULL);
 	}
 	nodes_new->str = filled;
