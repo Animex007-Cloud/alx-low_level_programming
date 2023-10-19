@@ -1,4 +1,4 @@
-#include "list.h"
+#include "lists.h"
 
 /**
  * list_len - entry point
@@ -16,8 +16,8 @@ size_t list_len(const list_t *h)
 
 	while (h != NULL)
 	{
-		h = h->next;
 		sum++;
+		h = h->next;
 	}
 	return (sum);
 }
