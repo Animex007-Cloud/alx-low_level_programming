@@ -19,7 +19,7 @@ int _strlen(const char *str)
 }
 
 /**
- * all_node - entry point
+ * add_node - entry point
  * Description: function that adds node to list
  * @head: list of current position of node
  * @str: string
