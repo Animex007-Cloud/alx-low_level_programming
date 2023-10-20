@@ -50,10 +50,10 @@ list_t *add_node_end(list_t **head, const char *str)
 	else
 	{
 		tmp1 = *head;
-		
+
 		while (tmp1->next != NULL)
 			tmp1 = tmp1->next;
 		tmp1->next = new1;
 	}
 	return (new1);
-} 
+}
