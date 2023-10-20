@@ -1,9 +1,8 @@
 #include <stdio.h>
 
 /**
- * __attribute__ - entry point
- * Description: function that prints output
- * Return: 0
+ * before_main_executes - execute this function
+ * before main function
  */
 
 void __attribute__ ((constructor)) before_main_executes()
