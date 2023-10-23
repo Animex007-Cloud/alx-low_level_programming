@@ -2,7 +2,8 @@
 
 /**
  * listint_len - entry point
- * Description: A function that adds a new node at the beginning
+ * Description: A function that returns the number of elements
+ * in a linked listint_t
  * of a listint
  *
  * @h: list
