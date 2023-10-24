@@ -2,40 +2,42 @@
 
 /**
  * insert_nodeint_at_index - Entry point
+ * Description: A function that inserts the node
+ * index at 0 of linked list
+ *
  * @head: start of the list
  * @idx: the index of the node
  * @n: elements to insert in node.
  *
- * Description: inserts the node index at 0 of a linked list.
- *
  * Return: address of new node or Null if fails.
  */
+
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-        listint_t *place, *newNode;
+        listint_t *print, *addednode;
 
-        place = *head;
-        newNode = malloc(sizeof(listint_t));
-        if (newNode == NULL)
+        printe = *head;
+        addednode = malloc(sizeof(listint_t));
+        if (addednode == NULL)
                 return (NULL);
-        newNode->n = n;
+        addednode->n = n;
 	 if (idx == 0)
         {
-                newNode->next = place;
-                *head = newNode;
+                addednode->next = print;
+                *head = addednode;
                 return (*head);
         }
         while (idx > 1)
         {
-                place = place->next;
+                print = print->next;
                 idx--;
-                if (!place)
+                if (!print)
                 {
-                        free(newNode);
+                        free(addednode);
                         return (NULL);
                 }
         }
-        newNode->next = place->next;
-        place->next = newNode;
-        return (newNode);
+        addednode->next = print->next;
+        print->next = addednode;
+        return (addednode);
 }
