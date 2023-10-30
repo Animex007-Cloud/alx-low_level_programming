@@ -23,7 +23,7 @@ ssize_t _strlen(const char *str)
 }
 
 /**
- * create_file = entry point
+ * create_file - entry point
  * Description: A function that create file with permission read & write only
  *
  * @filename: name of file to be created
