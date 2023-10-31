@@ -24,6 +24,7 @@ int close_my_file(int fd)
  * error of message as given
  *
  * @fd: check/read descriptor
+ * @filename: pointer to file
  * @itrate: send write to from buffer
  * @sum: sum up and count number of byte
  * Return: num of byte read
@@ -45,12 +46,14 @@ ssize_t read_my_file(const char *filename, int fd, char *itrate, size_t sum)
  * to failure
  *
  * @fd: descriptor of file
+ * @filename: file to print from
  * @itrate: bytes to check
  * @sum: sum and write num of bytes
  * Return: -1 on fail and num of bytes on success
  */
 
-ssize_t write_file(const char *filename, int fd, const char *itrate, size_t sum)
+ssize_t write_file(const char *filename, int fd,
+		const char *itrate, size_t sum)
 {
 	ssize_t write_bytes = write(fd, itrate, sum);
 
@@ -63,6 +66,8 @@ ssize_t write_file(const char *filename, int fd, const char *itrate, size_t sum)
 /**
  * main - entry point
  * Description: A function that copies file
+ * @argc: firsr arg
+ * @argv: character
  *
  * Return: 0
  */
