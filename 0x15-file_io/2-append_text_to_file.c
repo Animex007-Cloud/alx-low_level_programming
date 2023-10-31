@@ -17,10 +17,7 @@ ssize_t _strlen(const char *str)
 
 	while (*str++)
 		length++;
-
-	while (*str++)
-		length++;
-
+	
 	return (length);
 }
 
