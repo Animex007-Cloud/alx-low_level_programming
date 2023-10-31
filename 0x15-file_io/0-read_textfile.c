@@ -14,7 +14,7 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int j;
-	char *itrate;
+	char *itrate = NULL;
 	ssize_t my_readings;
 	ssize_t my_write;
 

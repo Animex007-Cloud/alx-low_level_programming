@@ -14,7 +14,7 @@ int close_my_file(int fd)
 {
 	if (!close(fd))
 		return (0);
-	dprint(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
+	dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 	return (-1);
 }
 
@@ -56,7 +56,7 @@ ssize_t write_file(const char *filename, int fd, const char *itrate, size_t sum)
 
 	if (write_bytes > -1)
 		return (write_bytes);
-	dprint(STDERR_FILENO, "Error: Can't write to %s\n", filename);
+	dprintf(STDERR_FILENO, "Error: Can't write to %s\n", filename);
 	return (-1);
 }
 
